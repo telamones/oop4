@@ -10,10 +10,10 @@ int main() {
     cout << "enter a:" << endl << "enter b:" << endl;
     cin >> a >> b;
 
-    if (a < b) {
+    if (b == 0) {
+        err=1;
+    } else if (a < b) {
         if (a == 0) {
-            err=1;
-        } else if (b == 0) {
             err=1;
         } else {
             n = a * a + (a - b) / (sin(a * b));
